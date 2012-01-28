@@ -20,6 +20,8 @@ ws.createServer(function(req, connection) {
 });
 ```
 
+You may pass a third argument to `new Repoc()` which is a session ID. If included, it will be prepended to the arguments sent to the API function so that it can be used to identify a session to associate messages with.
+
 ### Client Example:
 ```javascript
 var ws = new WebSocket('ws://localhost'); // Get a WebSocket connection
